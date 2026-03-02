@@ -1,111 +1,41 @@
-<ht1><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Collection | Luxe & Minimal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shop | Unique Collection</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-stone-50 text-stone-900 font-sans">
-
-    <nav class="p-6 flex justify-between items-center bg-white shadow-sm sticky top-0 z-50">
-        <h1 class="text-2xl font-serif tracking-widest uppercase font-bold text-amber-900">Luxe & Minimal</h1>
-        <div class="space-x-8 uppercase text-[11px] tracking-widest font-semibold">
-            <a href="index.html" class="hover:text-amber-600 transition">Home</a>
-            <a href="products.html" class="font-bold underline text-amber-600">Shop</a>
-            <a href="about.html" class="hover:text-amber-600 transition">Our Story</a>
-        </div>
+<body>
+    <nav class="navbar">
+        <div class="logo">UNIQUE COLLECTION</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+        </ul>
     </nav>
 
-    <header class="py-12 text-center">
-        <h2 class="text-4xl font-serif">Stainless Gold Collection</h2>
-        <p class="text-stone-500 mt-2">Premium Variety Jewellery</p>
-    </header>
-
-    <main class="max-w-7xl mx-auto py-12 px-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            
-            <div class="bg-white border border-stone-200 p-4 shadow-sm hover:shadow-md transition">
-                <div class="relative aspect-square mb-4 bg-stone-100 overflow-hidden">
-                    <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] px-2 py-1 z-10 font-bold uppercase">20% OFF</span>
-                    <img src="https://images.clothes.com/products/ring-gold-1.jpg" 
-                         alt="Ring" 
-                         onerror="this.src='https://via.placeholder.com/400?text=Gold+Ring'"
-                         class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                </div>
-                <h3 class="font-bold uppercase text-[11px] tracking-tight">Stainless Gold Ring</h3>
-                <p class="text-[10px] text-red-500 font-bold mt-1 uppercase">6 pieces left</p>
-                <div class="mt-3 flex items-center gap-2">
-                    <span class="text-lg font-bold text-amber-900">Rs. 1,200</span>
-                    <span class="text-xs text-stone-400 line-through">Rs. 1,500</span>
-                </div>
-                <button class="w-full mt-4 bg-stone-900 text-white py-2 text-[10px] uppercase font-bold hover:bg-amber-800 transition">Add to Craft</button>
+    <section class="shop-container">
+        <h2>Our Collection</h2>
+        <div class="masonry-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=500&q=80" alt="Girls Dress">
+                <div class="details"><span>Girls Floral Dress</span> <span>Rs. 2,500</span></div>
             </div>
-
-            <div class="bg-white border border-stone-200 p-4 shadow-sm hover:shadow-md transition">
-                <div class="relative aspect-square mb-4 bg-stone-100 overflow-hidden">
-                    <img src="https://www.jewelry-photos.com/bangle-stainless-gold.jpg" 
-                         alt="Bangles" 
-                         onerror="this.src='https://via.placeholder.com/400?text=Gold+Bangles'"
-                         class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                </div>
-                <h3 class="font-bold uppercase text-[11px] tracking-tight">Stainless Gold Bangles</h3>
-                <p class="text-[10px] text-stone-500 mt-1 uppercase font-bold italic">10 pieces in stock</p>
-                <div class="mt-3 text-lg font-bold text-amber-900">Rs. 2,500</div>
-                <button class="w-full mt-4 bg-stone-900 text-white py-2 text-[10px] uppercase font-bold hover:bg-amber-800 transition">Add to Craft</button>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1519232402913-6c7686527918?auto=format&fit=crop&w=400&q=80" alt="Boys Shirt">
+                <div class="details"><span>Boys Linen Shirt</span> <span>Rs. 1,800</span></div>
             </div>
-
-            <div class="bg-white border border-stone-200 p-4 shadow-sm hover:shadow-md transition">
-                <div class="relative aspect-square mb-4 bg-stone-100 overflow-hidden">
-                    <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] px-2 py-1 z-10 font-bold uppercase">15% OFF</span>
-                    <img src="https://images.clothes.com/products/earrings-gold.jpg" 
-                         alt="Earrings" 
-                         onerror="this.src='https://via.placeholder.com/400?text=Gold+Earrings'"
-                         class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                </div>
-                <h3 class="font-bold uppercase text-[11px] tracking-tight">Stainless Gold Earrings</h3>
-                <p class="text-[10px] text-red-500 font-bold mt-1 uppercase">4 pieces left</p>
-                <div class="mt-3 flex items-center gap-2">
-                    <span class="text-lg font-bold text-amber-900">Rs. 950</span>
-                    <span class="text-xs text-stone-400 line-through">Rs. 1,100</span>
-                </div>
-                <button class="w-full mt-4 bg-stone-900 text-white py-2 text-[10px] uppercase font-bold hover:bg-amber-800 transition">Add to Craft</button>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=600&q=80" alt="Kids Fashion">
+                <div class="details"><span>Casual Wear Set</span> <span>Rs. 3,200</span></div>
             </div>
-
-            <div class="bg-white border border-stone-200 p-4 shadow-sm hover:shadow-md transition">
-                <div class="relative aspect-square mb-4 bg-stone-100 overflow-hidden">
-                    <img src="https://www.jewelry-photos.com/necklace-gold.jpg" 
-                         alt="Necklace" 
-                         onerror="this.src='https://via.placeholder.com/400?text=Gold+Necklace'"
-                         class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                </div>
-                <h3 class="font-bold uppercase text-[11px] tracking-tight">Stainless Gold Necklace</h3>
-                <p class="text-[10px] text-stone-500 mt-1 uppercase font-bold italic">15 pieces in stock</p>
-                <div class="mt-3 text-lg font-bold text-amber-900">Rs. 3,200</div>
-                <button class="w-full mt-4 bg-stone-900 text-white py-2 text-[10px] uppercase font-bold hover:bg-amber-800 transition">Add to Craft</button>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1503919545889-aef60f855feb?auto=format&fit=crop&w=400&q=80" alt="Boys Pants">
+                <div class="details"><span>Denim Edit</span> <span>Rs. 2,100</span></div>
             </div>
-
-            <div class="bg-white border border-stone-200 p-4 shadow-sm hover:shadow-md transition">
-                <div class="relative aspect-square mb-4 bg-stone-100 overflow-hidden">
-                    <span class="absolute top-2 left-2 bg-black text-white text-[10px] px-2 py-1 z-10 font-bold uppercase">New</span>
-                    <img src="https://www.jewelry-photos.com/locket-gold.jpg" 
-                         alt="Locket" 
-                         onerror="this.src='https://via.placeholder.com/400?text=Gold+Locket'"
-                         class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                </div>
-                <h3 class="font-bold uppercase text-[11px] tracking-tight">Stainless Gold Locket</h3>
-                <p class="text-[10px] text-red-500 font-bold mt-1 uppercase">2 pieces left</p>
-                <div class="mt-3 text-lg font-bold text-amber-900">Rs. 1,800</div>
-                <button class="w-full mt-4 bg-stone-900 text-white py-2 text-[10px] uppercase font-bold hover:bg-amber-800 transition">Add to Craft</button>
-            </div>
-
         </div>
-    </main>
-
-    <footer class="bg-stone-900 text-stone-400 py-12 text-center text-[10px] tracking-widest uppercase">
-        <p class="text-white mb-2 font-bold italic">Luxe & Minimal variety jewellery</p>
-        <p>© 2026. Premium Stainless Gold Collection.</p>
-    </footer>
-
+    </section>
 </body>
-</html></ht1>
+</html>
