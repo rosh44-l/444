@@ -1,0 +1,57 @@
+/* General Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; background: #faf9f6; color: #333; line-height: 1.6; }
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky; top: 0; background: #fff; padding: 20px 5%;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 1000; border-bottom: 1px solid #eee;
+}
+.logo { font-weight: 700; letter-spacing: 2px; font-size: 1.5rem; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 25px; }
+.nav-links a { text-decoration: none; color: #333; font-size: 0.9rem; transition: 0.3s; }
+.nav-links a:hover { color: #d4af37; }
+
+/* Hero Section */
+.hero {
+    height: 80vh; background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+    url('https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?auto=format&fit=crop&w=1500&q=80') center/cover;
+    display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+}
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.btn { display: inline-block; padding: 12px 30px; background: #333; color: #fff; text-decoration: none; margin-top: 20px; }
+
+/* Breakable Masonry Grid */
+.masonry-grid {
+    column-count: 2; column-gap: 20px; padding: 50px 5%;
+}
+.product-card {
+    display: inline-block; width: 100%; margin-bottom: 20px;
+    background: #fff; padding: 10px; border: 1px solid #f0f0f0;
+}
+.product-card img { width: 100%; height: auto; display: block; filter: grayscale(20%); transition: 0.5s; }
+.product-card img:hover { filter: grayscale(0%); }
+.details { display: flex; justify-content: space-between; padding-top: 10px; font-size: 0.85rem; }
+
+/* Craft Section */
+.craft-section { padding: 80px 5%; text-align: center; }
+.breakable-grid { display: flex; gap: 15px; margin-top: 30px; align-items: flex-start; }
+.breakable-grid img { width: 33%; height: auto; object-fit: cover; }
+.breakable-grid img:nth-child(2) { margin-top: 50px; } /* Creating the staggered look */
+
+/* Footer */
+footer { background: #1a1a1a; color: white; padding: 50px 5%; margin-top: 50px; }
+.footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; }
+.socials a { color: white; font-size: 1.5rem; margin-right: 15px; }
+.copy { text-align: center; margin-top: 30px; border-top: 1px solid #333; padding-top: 20px; font-size: 0.7rem; }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .masonry-grid { column-count: 1; }
+    .hero h1 { font-size: 2rem; }
+    .breakable-grid { flex-direction: column; }
+    .breakable-grid img { width: 100%; margin-top: 0 !important; }
+}
