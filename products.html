@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop | Luxe & Minimal</title>
+    <title>Our Collection | Luxe & Minimal</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-stone-50">
+<body class="bg-stone-50 text-stone-900">
+
     <nav class="p-6 flex justify-between items-center bg-white shadow-sm sticky top-0 z-50">
         <h1 class="text-2xl font-serif tracking-widest uppercase font-bold">Luxe & Minimal</h1>
         <div class="space-x-8 uppercase text-xs tracking-widest">
@@ -16,46 +17,110 @@
         </div>
     </nav>
 
+    <header class="py-12 bg-stone-100 text-center">
+        <h2 class="text-4xl font-serif mb-2">Jewelry Collection</h2>
+        <p class="text-stone-500 italic">Tarnish-free Stainless Gold & Premium AD Silver</p>
+    </header>
+
     <main class="max-w-7xl mx-auto py-16 px-6">
-        <h2 class="text-4xl font-serif mb-4 text-center">Stainless Gold & AD Silver</h2>
-        <p class="text-center text-stone-500 mb-12 italic text-sm">Update your style with our latest inventory</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
-            <div class="bg-white group shadow-sm hover:shadow-2xl transition-all duration-300">
-                <div class="relative overflow-hidden">
-                    <span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] px-3 py-1 font-bold z-10">20% OFF</span>
-                    <img src="https://images.unsplash.com/photo-1630019058228-49933069121c?auto=format&fit=crop&w=600&q=80" alt="Gold Earrings" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+            <div class="bg-white p-4 shadow-sm hover:shadow-xl transition">
+                <div class="relative overflow-hidden mb-4">
+                    <span class="absolute top-2 left-2 bg-amber-600 text-white text-[10px] px-2 py-1 font-bold z-10">BESTSELLER</span>
+                    <img src="https://images.unsplash.com/photo-1630019058228-49933069121c?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
                 </div>
-                <div class="p-6 text-center">
-                    <h3 class="font-serif text-xl mb-2">Stainless Gold Hoops</h3>
-                    
-                    <div class="flex justify-center items-center gap-3 mb-2">
-                        <span class="text-amber-700 text-lg font-bold">$29.99</span>
-                        <span class="text-gray-400 line-through text-sm">$39.99</span>
-                    </div>
-
-                    <p class="text-xs text-red-500 font-bold mb-4">Only 4 pieces left!</p>
-                    
-                    <button class="w-full bg-stone-900 text-white py-3 hover:bg-amber-700 transition uppercase text-xs tracking-widest font-bold">Add to Cart</button>
+                <h3 class="font-bold uppercase text-sm tracking-tight">Stainless Gold Hoops</h3>
+                <p class="text-red-500 text-[10px] font-bold">5 pieces left</p>
+                <div class="mt-2 mb-4">
+                    <span class="text-amber-800 font-bold">$24.00</span>
+                    <span class="text-gray-400 line-through text-xs ml-2">$35.00</span>
                 </div>
+                <button class="w-full border border-black py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart</button>
             </div>
 
-            <div class="bg-white group shadow-sm hover:shadow-2xl transition-all duration-300">
-                <div class="relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?auto=format&fit=crop&w=600&q=80" alt="Silver Necklace" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+            <div class="bg-white p-4 shadow-sm hover:shadow-xl transition">
+                <div class="relative overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
                 </div>
-                <div class="p-6 text-center">
-                    <h3 class="font-serif text-xl mb-2">AD Silver Minimal Chain</h3>
-                    <div class="mb-2">
-                        <span class="text-amber-700 text-lg font-bold">$42.00</span>
-                    </div>
-                    <p class="text-xs text-gray-500 mb-4 italic text-sm">15 pieces in stock</p>
-                    <button class="w-full bg-stone-900 text-white py-3 hover:bg-amber-700 transition uppercase text-xs tracking-widest font-bold">Add to Cart</button>
-                </div>
+                <h3 class="font-bold uppercase text-sm tracking-tight">AD Silver Minimal Chain</h3>
+                <p class="text-gray-400 text-[10px]">12 pieces in stock</p>
+                <div class="mt-2 mb-4 text-amber-800 font-bold">$42.00</div>
+                <button class="w-full border border-black py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart</button>
             </div>
 
+            <div class="bg-white p-4 shadow-sm hover:shadow-xl transition">
+                <div class="relative overflow-hidden mb-4">
+                    <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] px-2 py-1 font-bold z-10">10% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="font-bold uppercase text-sm tracking-tight">Gold Stackable Bangle</h3>
+                <p class="text-red-500 text-[10px] font-bold">Only 2 left!</p>
+                <div class="mt-2 mb-4">
+                    <span class="text-amber-800 font-bold">$55.00</span>
+                    <span class="text-gray-400 line-through text-xs ml-2">$62.00</span>
+                </div>
+                <button class="w-full border border-black py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart</button>
             </div>
+
+            <div class="bg-white p-4 shadow-sm hover:shadow-xl transition">
+                <div class="relative overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="font-bold uppercase text-sm tracking-tight">Dainty Silver Ring Set</h3>
+                <p class="text-gray-400 text-[10px]">20 pieces in stock</p>
+                <div class="mt-2 mb-4 text-amber-800 font-bold">$18.00</div>
+                <button class="w-full border border-black py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart</button>
+            </div>
+
+            <div class="bg-white p-4 shadow-sm hover:shadow-xl transition">
+                <div class="relative overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a18b5ce73f7?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="font-bold uppercase text-sm tracking-tight">Vintage Gold Locket</h3>
+                <p class="text-gray-400 text-[10px]">8 pieces in stock</p>
+                <div class="mt-2 mb-4 text-amber-800 font-bold">$38.00</div>
+                <button class="w-full border border-black py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart</button>
+            </div>
+
+            <div class="bg-white p-4 shadow-sm hover:shadow-xl transition">
+                <div class="relative overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1611085583191-a3b1a30a8a0a?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="font-bold uppercase text-sm tracking-tight">Silver Link Bracelet</h3>
+                <p class="text-red-500 text-[10px] font-bold">Low Stock: 3 left</p>
+                <div class="mt-2 mb-4 text-amber-800 font-bold">$29.00</div>
+                <button class="w-full border border-black py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart</button>
+            </div>
+
+            <div class="bg-white p-4 shadow-sm hover:shadow-xl transition">
+                <div class="relative overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="font-bold uppercase text-sm tracking-tight">Minimal Gold Cuff</h3>
+                <p class="text-gray-400 text-[10px]">15 pieces in stock</p>
+                <div class="mt-2 mb-4 text-amber-800 font-bold">$22.00</div>
+                <button class="w-full border border-black py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart</button>
+            </div>
+
+            <div class="bg-white p-4 shadow-sm hover:shadow-xl transition">
+                <div class="relative overflow-hidden mb-4">
+                    <span class="absolute top-2 left-2 bg-black text-white text-[10px] px-2 py-1 font-bold z-10">NEW ARRIVAL</span>
+                    <img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="font-bold uppercase text-sm tracking-tight">Pearl Drop Gold Earrings</h3>
+                <p class="text-gray-400 text-[10px]">10 pieces in stock</p>
+                <div class="mt-2 mb-4 text-amber-800 font-bold">$45.00</div>
+                <button class="w-full border border-black py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart</button>
+            </div>
+
+        </div>
     </main>
+
+    <footer class="bg-stone-900 text-stone-400 py-12 px-6 text-center text-sm mt-20">
+        <p class="mb-4 text-white uppercase tracking-widest font-bold">Luxe & Minimal Variety Jewellery</p>
+        <p>© 2026. Free Shipping on orders over $100.</p>
+    </footer>
+
 </body>
 </html></ht1>
